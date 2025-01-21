@@ -106,6 +106,37 @@ You'll want to repeat these steps for each area you want to define within your m
 - Go ahead & `Quick Export as PNG` this merged version to your source for safe keeping as well.
 ---
 
-## Road Shapes & Background Material
 
-**WIP** -- Will continue this section later.
+## Background Material
+- For your background material, copy & paste and existing layer, select it, and open up your **Color Picker**.
+- Set your desired RGB value and paint the entire layer.
+
+![Step 11](./images/background_material.png)
+---
+- Arrange the layer between your merged version and Alpha image:
+![Step 12](./images/applied_background_mat.png)
+*This will fill in any open transparent areas.* So far, we are at 5 materials total.
+
+- Merge your merged version down on top of it.
+---
+
+## Adding Road Shapes
+###### WIP -- Will complete this section with visual references. But for now..
+
+### Basically, from your project in Terrain Builder: 
+- Hide all `Raster` layers.
+- Hide all `Object` layers.
+- Hide all `Shapes` with the exception of your road shapes.
+- Apply a terrain texture to your road shapes by right-clicking and selecting your desired choice. (i.e. `cp_concrete1`)
+- `File` > `Export` > `Shapes as Imagery` ..
+- Save this export to your `source` folder for safe keeping.
+#### You don't need to:
+- Select `create a new layer` in your TB project.
+- Apply a background material.
+
+This should give you a .png of your road shapes and a black background.
+
+- Drag & Drop this into your PhotoShop project.
+- Copy & Paste it as a layer. Ensure that the roads align up as they should.
+- Place this layer on top of your merged version.
+- Merge it down so that it overlays everything else.
