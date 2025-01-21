@@ -9,7 +9,7 @@ I will be using a `gtt_satmap.bmp` exported with **Game Terrain Tools** plugin o
 - Adobe PhotoShop
 - Satellite Map
 - RGB references from your `layers.cfg` file
-- This [Reference Image](images\LayerLegendComplete_v2.png) of terrain textures in-game may also help you along the way.
+- This [Reference Image](./images/LayerLegendComplete_v2.png) of terrain textures in-game may also help you along the way.
   - Credit to BergTheBeard in [DZ Academy Discord](https://discord.com/channels/728090560304382002/761156911398780958/1118673530394001528)
 
 
@@ -65,6 +65,7 @@ With the area selected, open your **Color Picker** in the top right by double cl
 - Start painting away. Only the selection will be applied.
 ![Step Seven](./images/Step7.png)
 ![Rename your layers as you go to the terrains to help you easily identfy them.](./images/rename_layers.png)
+
 *Tip: Rename your layers as the terrain textures as you go to help you easily identfy them.*
 
 ---
@@ -79,7 +80,7 @@ You'll want to repeat these steps for each area you want to define within your m
 
 
 ---
-**Tips:** Allow yourself up to 6 types of materials while doing this. 
+**Tips:** Allow yourself up to 6 types of materials while doing this.
 
 - *You can further refine & tune in areas where you are certain that the **limit of 6 materials per cell** is not going to be exceeded.*
 
