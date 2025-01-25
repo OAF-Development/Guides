@@ -82,7 +82,7 @@ You'll want to repeat these steps for each area you want to define within your m
 ---
 **Tips:** Allow yourself up to 6 types of materials while doing this.
 
-- *You can further refine & tune in areas where you are certain that the **limit of 6 materials per cell** is not going to be exceeded.*
+- *You can further refine & tune in areas where you are certain that the **limit of 6 "materials per cell"** is not going to be exceeded.*
 
 - Depending on the complexity of your map, you may want to limit yourself to 4-5 layers of terrain colors.
 
@@ -124,20 +124,92 @@ You'll want to repeat these steps for each area you want to define within your m
 ## Adding Road Shapes
 ###### WIP -- Will complete this section with visual references. But for now..
 
-### Basically, from your project in Terrain Builder: 
+### Basically, from your project in Terrain Builder:
 - Hide all `Raster` layers.
+
+![Step 1_Roads](./images/hide_rasters.png)
+---
+
 - Hide all `Object` layers.
+
+![Step 2_Roads](./images/hide_objects.png)
+---
+
 - Hide all `Shapes` with the exception of your road shapes.
-- Apply a terrain texture to your road shapes by right-clicking and selecting your desired choice. (i.e. `cp_concrete1`)
+
+![Step 3_Roads](./images/hide_shapes.png)
+---
+
+- You can refine road shape(s) `outline width` to better outline your actual roads according to their respective parts.
+  - More information on **Chernarus** & **Enoch** road parts & their widths can be found here:
+
+      [Bohemia Interactive Wiki - Road Tool](https://community.bistudio.com/wiki/DayZ:Using_Road_Tool_in_Terrain_Builder)
+
+      [Sakhal Road References](/P3D_References/images/Sakhal_Road_Parts.png)
+
+- With the shapes/polylines you wish to adjust selected:
+
+![Adjust Shape Width](./images/resize_shapes.png)
+---
+- Apply a terrain texture to your road shapes by right-clicking a `shape layer` and selecting your desired choice. (i.e. `cp_concrete1`)
+    - These are defined in your `layers.cfg` file.
+- This will apply that assigned terrain texture material's RGB to the shape(s).
+- **Be mindful:** 
+    - *If you're applying numerous terrain textures to your shapes; these **do count** against the limit of total **"materials per cell"** (tile).*
+
+![Step 4_Roads](./images/apply_tex_to_shapes.png)
+---
+
 - `File` > `Export` > `Shapes as Imagery` ..
+
+![Step 5_Roads](./images/shapes_to_imagery.png)
+---
+
 - Save this export to your `source` folder for safe keeping.
+
+
 #### You don't need to:
-- Select `create a new layer` in your TB project.
+- Select `create a surface mask` in your TB project.
 - Apply a background material.
 
-This should give you a .png of your road shapes and a black background.
+![Step 6_Roads](./images/export_settings.png)
+---
 
-- Drag & Drop this into your PhotoShop project.
-- Copy & Paste it as a layer. Ensure that the roads align up as they should.
-- Place this layer on top of your merged version.
+- This should give you a `.png` of your road shapes and a black background.
+- Drag & Drop this into **PhotoShop** from where you chose to save the export it to.
+- `Select` > `Color Range` > Grab the black background areas > Hit `Delete` key.
+
+![Example of Roads Export](./images/export_roads_example.png)
+
+- You may need to repeat this process or utilize the `Magic Wand Tool` to get any background areas that were not auto-selected.
+
+![Roads_to_PS](./images/select_delete_bkgd.png)
+---
+
+- Once you've removed all the black background areas, `CTRL + A` to select the entire image.
+  - Copy & Paste this as a layer into your active project where your mask is located.
+
+![Select ALL](./images/select_all.png)
+---
+
+- Place this layer on **top** of your merged version in the `Layers` tab of **PhotoShop**.
 - Merge it down so that it overlays everything else.
+
+![Results Example](./images/results.png)
+
+
+
+---
+## Converting `.png` to `.bmp`
+
+Importing `.png` files into **Terrain Builder** can take a significant amount of time.
+
+ In order to expedite the process, you will want to convert your exported `.png` versions into `.bmp`
+ 
+ This can easily be done on sites like [Convertio](https://convertio.co/image-converter/) and [Online-Convert](https://image.online-convert.com) for free.
+
+Keep in mind **Convertio** does have a 100mb file size limit; **Online-Convert**, does not.
+
+Convert the images; download the results.
+
+Your new `.bmp` version will be larger in file size than the `.png` but will import into **TB** much faster.
