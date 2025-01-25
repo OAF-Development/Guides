@@ -122,7 +122,7 @@ You'll want to repeat these steps for each area you want to define within your m
 ---
 
 ## Adding Road Shapes
-###### WIP -- Will complete this section with visual references. But for now..
+
 
 ### Basically, from your project in Terrain Builder:
 - Hide all `Raster` layers.
