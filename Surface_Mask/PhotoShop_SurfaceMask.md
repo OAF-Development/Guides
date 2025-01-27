@@ -204,5 +204,18 @@ You'll want to repeat these steps for each area you want to define within your m
 
 Importing `.png` files into **Terrain Builder** can take a significant amount of time.
 
-In order to expedite the process, you will want to ensure that your `.png` version is `Saved As..` `.bmp`
+In order to expedite the process, you will want to ensure that your `.png` version is converted to `.bmp`
+
+This can easily be done on sites like [Convertio](https://convertio.co/image-converter/) and [Online-Convert](https://image.online-convert.com) for free.
+
+Keep in mind **Convertio** does have a 100mb file size limit; **Online-Convert**, does not.
+  - Usually, your surface mask will meet the file size limit; for Satmaps, utilize **Online-Convert**
+
+Convert the images; download the results.
+
+Your new `.bmp` version will be larger in file size than the `.png` but will import into **TB** much faster.
+
+
+#### If your working with a `.bmp` file already, Photoshop should provide the option to:
+ `Saved As..` `.bmp`
  
